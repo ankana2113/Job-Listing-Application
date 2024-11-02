@@ -1,0 +1,1 @@
+declare module '@workos-inc/authkit-nextjs';

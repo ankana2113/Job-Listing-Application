@@ -1,0 +1,47 @@
+{
+  "name": "job-listing-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "mock-api": "json-server --watch db.json --port 5000"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.6.0",
+    "@fortawesome/free-brands-svg-icons": "^6.6.0",
+    "@fortawesome/free-regular-svg-icons": "^6.6.0",
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "@radix-ui/themes": "^3.1.4",
+    "@workos-inc/authkit-nextjs": "^0.13.1",
+    "@workos-inc/node": "^7.30.0",
+    "axios": "^1.7.7",
+    "dotenv": "^16.4.5",
+    "javascript-time-ago": "^2.5.11",
+    "mongoose": "^8.8.0",
+    "next": "15.0.2",
+    "react": "18.3.1",
+    "react-country-state-city": "^1.1.4",
+    "react-dom": "18.3.1",
+    "react-time-ago": "^7.3.3",
+    "react-timeago": "^7.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.4",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.13.0",
+    "eslint-config-next": "15.0.2",
+    "glob": "^11.0.0",
+    "json-server": "1.0.0-beta.3",
+    "postcss": "^8.4.47",
+    "rimraf": "^6.0.1",
+    "tailwindcss": "^3.4.14",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}

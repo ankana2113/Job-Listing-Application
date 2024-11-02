@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply text-gray-700;
+    background: linear-gradient(to right, #cdaef0, #a8c3e7); 
+}
+
+.translucent-slate {
+    background-color: rgba(233, 239, 246, 0.7); /* slate gray with 70% opacity */
+    min-height: 100vh; /* Ensure it covers the full height */
+  }
