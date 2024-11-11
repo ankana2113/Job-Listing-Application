@@ -3,7 +3,7 @@ import { saveJobAction } from "@/app/actions/jobActions";
 import type { Job } from "@/models/Job";
 import { faEnvelope, faPhone, faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Button, RadioGroup, TextArea, TextField, Theme, Flex, Box } from "@radix-ui/themes";
+import { Button, RadioGroup, TextArea, TextField, Theme, Box } from "@radix-ui/themes";
 import { redirect } from "next/navigation";
 import { useState } from "react";
 import "react-country-state-city/dist/react-country-state-city.css";
