@@ -1,6 +1,7 @@
 import JobForm from "@/app/components/JobForm";
 import { JobModel } from "@/models/Job";
-import { getUser } from "@workos-inc/authkit-nextjs";
+//import { getUser } from "@workos-inc/authkit-nextjs";
+import { withAuth } from "@workos-inc/authkit-nextjs";
 import { WorkOS } from "@workos-inc/node";
 import mongoose from "mongoose";
 
@@ -17,7 +18,8 @@ export default async function EditJobPage(pageProps:PageProps) {
   if (!jobDoc) {
     return 'Not found';
   }
-  const {user} = await getUser();
+  //const {user} = await getUser();
+  const { user } = await withAuth({ ensureSignedIn: true });
   const workos = new WorkOS(process.env.WORKOS_API_KEY);
   if (!user) {
     return 'You need to login';
