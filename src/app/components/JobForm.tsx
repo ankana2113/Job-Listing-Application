@@ -107,7 +107,7 @@ export default function JobForm({orgId,jobDoc}:{orgId:string;jobDoc?:Job}) {
           Location
           <div className="flex flex-col sm:flex-row gap-4 *:grow">
             <CountrySelect 
-                onChange={(e:any) => {
+                onChange={(e) => {
                     setCountryId(e.id);
                     setCountryName(e.name);
                 }}
@@ -115,7 +115,7 @@ export default function JobForm({orgId,jobDoc}:{orgId:string;jobDoc?:Job}) {
             />
             <StateSelect
               countryid={countryId}
-              onChange={(e:any) => {
+              onChange={(e) => {
                 setStateId(e.id);
                 setStateName(e.name);
               }}
@@ -124,7 +124,7 @@ export default function JobForm({orgId,jobDoc}:{orgId:string;jobDoc?:Job}) {
             <CitySelect
               countryid={countryId}
               stateid={stateId}
-              onChange={(e:any) => {
+              onChange={(e) => {
                 setCityId(e.id);
                 setCityName(e.name);
               }}
