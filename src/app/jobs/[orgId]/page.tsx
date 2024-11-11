@@ -12,7 +12,7 @@ type PageProps = {
 export default async function CompanyJobsPage(props:PageProps) {
   const workos = new WorkOS(process.env.WORKOS_API_KEY);
 
-  const { orgId } = await props.params;
+  const { orgId } = props.params;
   const org = await workos.organizations.getOrganization(orgId);
   const {user} = await withAuth();
   
