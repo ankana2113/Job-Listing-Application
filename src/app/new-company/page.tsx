@@ -11,7 +11,7 @@ export default async function NewCompanyPage() {
   }
 
   if (!user) {
-    'Login to use this page';
+    return 'Login to use this page';
   }
 
   return (
