@@ -12,7 +12,7 @@ export default function Jobs({header,jobs}:{header:string,jobs:Job[]}) {
             <div>No jobs found</div>
           )}
           {jobs && jobs.map(job => (
-            <JobRow jobDoc={job} />
+            <JobRow key={job.id} jobDoc={job} />
           ))}
         </div>
 
