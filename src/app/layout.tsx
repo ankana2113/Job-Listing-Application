@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import Link from "next/link";
+//import Link from "next/link";
 import Header from "@/app/components/Header";
 import { AuthKitProvider } from '@workos-inc/authkit-nextjs';
 
