@@ -38,6 +38,7 @@ export default async function NewJobPage () {
               <div className="border inline-block rounded-md">
                 {Object.keys(organizationsNames).map(orgId => (
                   <Link
+                    key={orgId}
                     href={'/new-jobs/' + orgId}
                     className={
                       "py-2 px-4 flex gap-2 items-center "
